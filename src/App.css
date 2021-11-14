@@ -1,38 +1,180 @@
-.App {
+body {
+  background-color: indianred;
+}
+header {
+  background-color:lightseagreen;
+  color: whitesmoke;
+ 
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-around;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  background-color:lightseagreen;;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-evenly;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  /* width: 100%; */
+
+  position: relative;
+  display: inline;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 1ch;
+  /* background-color:gold; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  justify-content: space-between;
   text-align: center;
+  margin-top: 5%;
+  padding: 2%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 800rem) {
+  .title {
+    display: flex;
+    display: row;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading {
+  justify-content: center;
+  color: blanchedalmond;
+  display: flex;
+}
+
+.content-part1 {
+  display: flex;
+
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  background-color: gold;
+  padding: 3%;
+  border-radius: 3%;
+  width: 50%;
+}
+.content-part2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  margin-top: 3%;
+  border-radius: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Balance */
+.balance {
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ExpenseStatus */
+.ex-status {
+  display: flex;
+  /* box-shadow: 10px 10px 5px grey; */
+}
+
+.ex-status > div {
+  padding: 1%;
+
+  display: inline-block;
+}
+
+/* New Transaction */
+
+select,
+input[type="text"] {
+  /* background-color: black; */
+  width: 100%;
+
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border-bottom: 2px solid black;
+}
+.newtransaction {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.number-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border-bottom: 2px solid black;
+}
+
+.transaction-button {
+  padding: 1%;
+  margin: 8px 0;
+  border-radius: 5%;
+  border: none;
+  background-color: royalblue;
+  font-size: large;
+}
+
+/* Transaction */
+
+.transaction {
+  background-color: gold;
+  border-radius: 3%;
+}
+/* Display Transactions */
+
+.display-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.delete-button {
+  margin: 10px 0;
+  border-radius: 10%;
+  border: none;
+  display: inline;
+
+  font-size: x-large;
+}
+
+/* HowItWorks */
+
+a:hover {
+  text-decoration: underline;
+ 
+ 
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.video {
+  text-align: center;
 }
