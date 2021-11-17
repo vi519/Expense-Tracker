@@ -9,7 +9,7 @@
 </pre>
 
 # Usage:
-The App gives you brief idea about expense in day/month/year. having credit/debit features comes handy
+The App gives you the brief idea about expense in day/month/year. having credit/debit features comes handy
 
 ---
 # Features:
